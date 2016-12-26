@@ -6,7 +6,10 @@
   <body>
     <div class="iconGroup">
       <div>
-        <div class="shrinkingSpinner" />
+        <div class="shrinkingSpinner"></div>
+      </div>
+      <div>
+        <div class="triangleSpinner"></div>
       </div>
     </div>
   </body>

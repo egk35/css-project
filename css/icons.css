@@ -32,3 +32,35 @@
     width: 30px;
   }
 }
+
+.triangleSpinner {
+  animation: borderSpin 2s linear infinite;
+  border: 35px solid transparent;
+}
+
+@keyframes borderSpin {
+  0%, 100% {
+    border-bottom-color: rgba(0, 0, 255, 0.75);
+    border-left-color: rgba(0, 0, 255, 0);
+    border-right-color: rgba(0, 0, 255, 0.5);
+    border-top-color: rgba(0, 0, 255, 0.25);
+  }
+  25% {
+    border-bottom-color: rgba(0, 0, 255, 0.5);
+    border-left-color: rgba(0, 0, 255, 0.75);
+    border-right-color: rgba(0, 0, 255, 0.25);
+    border-top-color: rgba(0, 0, 255, 0);
+  }
+  50% {
+    border-bottom-color: rgba(0, 0, 255, 0.25);
+    border-left-color: rgba(0, 0, 255, 0.5);
+    border-right-color: rgba(0, 0, 255, 0);
+    border-top-color: rgba(0, 0, 255, 0.75);
+  }
+  75% {
+    border-bottom-color: rgba(0, 0, 255, 0);
+    border-left-color: rgba(0, 0, 255, 0.25);
+    border-right-color: rgba(0, 0, 255, 0.75);
+    border-top-color: rgba(0, 0, 255, 0.5);
+  }
+}
