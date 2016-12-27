@@ -1,5 +1,6 @@
 .iconGroup {
   background-color: #222;
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -34,8 +35,8 @@
 }
 
 .triangleSpinner {
-  animation: borderSpin 2s linear infinite;
-  border: 35px solid transparent;
+  animation: borderSpin 1.5s linear infinite;
+  border: 36px solid transparent;
 }
 
 @keyframes borderSpin {
