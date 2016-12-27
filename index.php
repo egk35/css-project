@@ -11,6 +11,13 @@
       <div>
         <div class="triangleSpinner"></div>
       </div>
+      <div>
+        <div class="circleSpinner">
+          <div class="spinner"></div>
+          <div class="filler"></div>
+          <div class="mask"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -9,6 +9,8 @@
   float: left;
   margin: 10px;
   padding: 10px;
+  height: 70px;
+  width: 70px;
 }
 
 /* Icons */
@@ -18,8 +20,8 @@
   border-color: blue;
   border-radius: 50%;
   border-top: 2px solid blue;
-  height: 70px;
-  width: 70px;
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes spin {
@@ -64,4 +66,48 @@
     border-right-color: rgba(0, 0, 255, 0.75);
     border-top-color: rgba(0, 0, 255, 0.5);
   }
+}
+
+.circleSpinner {
+  background: inherit;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.circleSpinner > div {
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+}
+
+.circleSpinner > .spinner,
+.circleSpinner > .filler {
+  border: 2px solid blue;
+}
+
+.circleSpinner > .spinner {
+  animation: spin 5s linear infinite;
+  border-radius: 35px 0 0 35px;
+  border-right: none;
+  transform-origin: 100%;
+}
+
+.circleSpinner > .filler {
+  animation: show 5s steps(1, end) infinite;
+  border-left: none;
+  border-radius: 0 35px 35px 0;
+  left: 50%;
+}
+
+.circleSpinner > .mask {
+  animation: show 5s steps(1, end) infinite reverse;
+  background: inherit;
+}
+
+@keyframes show {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
 }
