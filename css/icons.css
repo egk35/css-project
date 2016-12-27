@@ -89,21 +89,21 @@
 }
 
 .circleSpinner > .spinner {
-  animation: spin 5s linear infinite;
+  animation: spin 2s ease-in-out infinite;
   border-radius: 35px 0 0 35px;
   border-right: none;
   transform-origin: 100%;
 }
 
 .circleSpinner > .filler {
-  animation: show 5s steps(1, end) infinite;
+  animation: show 2s steps(1, end) infinite;
   border-left: none;
   border-radius: 0 35px 35px 0;
   left: 50%;
 }
 
 .circleSpinner > .mask {
-  animation: show 5s steps(1, end) infinite reverse;
+  animation: show 2s steps(1, end) infinite reverse;
   background: inherit;
 }
 
