@@ -18,6 +18,13 @@
           <div class="mask"></div>
         </div>
       </div>
+      <div>
+        <div class="circleSpinner2">
+          <div class="spinner"></div>
+          <div class="filler"></div>
+          <div class="mask"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

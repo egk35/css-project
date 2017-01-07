@@ -74,14 +74,16 @@
 
 /* Circle Spinner */
 
-.circleSpinner {
+.circleSpinner,
+.circleSpinner2 {
   background: inherit;
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.circleSpinner > div {
+.circleSpinner > div,
+.circleSpinner2 > div {
   box-sizing: border-box;
   position: absolute;
   height: 100%;
@@ -90,33 +92,47 @@
 }
 
 .circleSpinner > .spinner,
-.circleSpinner > .filler {
+.circleSpinner > .filler,
+.circleSpinner2 > .spinner,
+.circleSpinner2 > .filler {
   border: 2px solid blue;
 }
 
-.circleSpinner > .spinner {
-  animation: spin-and-flip 4s ease-in-out infinite;
+.circleSpinner > .spinner,
+.circleSpinner2 > .spinner {
   border-radius: 35px 0 0 35px;
   border-right: none;
   transform-origin: 100%;
 }
 
-.circleSpinner > .filler {
-  animation:
-    show 2s steps(1, end) infinite alternate,
-    flip 4s steps(1, end) infinite;
+.circleSpinner > .filler,
+.circleSpinner2 > .filler {
   border-left: none;
   border-radius: 0 35px 35px 0;
   left: 50%;
   transform-origin: 0%;
 }
 
+.circleSpinner > .mask,
+.circleSpinner2 > .mask {
+  background: inherit;
+  transform-origin: 100%;
+}
+
+.circleSpinner > .spinner {
+  animation: spin-and-flip 4s ease-in-out infinite;
+}
+
+.circleSpinner > .filler {
+  animation:
+    show 2s steps(1, end) infinite alternate,
+    flip 4s steps(1, end) infinite;
+}
+
 .circleSpinner > .mask {
   animation:
     show 2s steps(1, end) infinite alternate-reverse,
     flip 4s steps(1, end) infinite;
-  background: inherit;
-  transform-origin: 100%;
 }
 
 @keyframes show {
@@ -134,4 +150,22 @@
   50% {transform: rotate(360deg);}
   50.01% {transform: rotate(-180deg);}
   100% {transform: rotate(180deg);}
+}
+
+/* Cirlce Spinner 2 */
+
+.circleSpinner2 > .spinner {
+  animation: spin 4s linear infinite;
+}
+
+.circleSpinner2 > .filler {
+  animation:
+    show 4s steps(1, end),
+    spin 4s linear 3.7s infinite;
+    opacity: 1;
+}
+
+.circleSpinner2 > .mask {
+  animation: show 4s steps(1, end) reverse;
+  opacity: 0;
 }
