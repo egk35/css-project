@@ -188,18 +188,19 @@
 
 .squareSpinner > .top,
 .squareSpinner > .bottom {
-  height: 3px;
+  height: 2px;
 }
 
 .squareSpinner > .left,
 .squareSpinner > .right {
-  width: 3px;
+  width: 2px;
 }
 
 .squareSpinner > .top {
   animation:
     grow-width 4s forwards linear infinite,
-    flip-horizontal 4s steps(1, end) infinite;
+    flip-horizontal 4s steps(1, end) infinite,
+    increment-height 16s linear 2s infinite alternate;
   left: 0;
   top: 0;
 }
@@ -207,7 +208,8 @@
 .squareSpinner > .right {
   animation:
     grow-height 4s forwards linear 0.5s infinite,
-    flip-vertical 4s steps(1, end) infinite;
+    flip-vertical 4s steps(1, end) infinite,
+    increment-width 16s linear 2s infinite alternate;
   right: 0;
   top: 0;
 }
@@ -215,7 +217,8 @@
 .squareSpinner > .bottom {
   animation:
     grow-width 4s forwards linear 1s infinite,
-    flip-horizontal 4s steps(1, end) infinite reverse;
+    flip-horizontal 4s steps(1, end) infinite reverse,
+    increment-height 16s linear 2s infinite alternate;
   bottom: 0;
   right: 0;
 }
@@ -223,7 +226,8 @@
 .squareSpinner > .left {
   animation:
     grow-height 4s forwards linear 1.5s infinite,
-    flip-vertical 4s steps(1, end) infinite reverse;
+    flip-vertical 4s steps(1, end) infinite reverse,
+    increment-width 16s linear 2s infinite alternate;
   bottom: 0;
   left: 0;
 }
@@ -272,4 +276,14 @@
     top: initial;
     bottom: 0;
   }
+}
+
+@keyframes increment-width {
+  0% {width: 2px;}
+  100% {width: 6px;}
+}
+
+@keyframes increment-height {
+  0% {height: 2px;}
+  100% {height: 6px;}
 }
