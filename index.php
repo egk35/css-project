@@ -25,6 +25,14 @@
           <div class="mask"></div>
         </div>
       </div>
+      <div>
+        <div class="squareSpinner">
+          <div class="top"></div>
+          <div class="right"></div>
+          <div class="bottom"></div>
+          <div class="left"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

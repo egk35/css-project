@@ -169,3 +169,107 @@
   animation: show 4s steps(1, end) reverse;
   opacity: 0;
 }
+
+/* Square Spinner */
+
+.squareSpinner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.squareSpinner > .top,
+.squareSpinner > .bottom,
+.squareSpinner > .left,
+.squareSpinner > .right {
+  background-color: blue;
+  position: absolute;
+}
+
+.squareSpinner > .top,
+.squareSpinner > .bottom {
+  height: 3px;
+}
+
+.squareSpinner > .left,
+.squareSpinner > .right {
+  width: 3px;
+}
+
+.squareSpinner > .top {
+  animation:
+    grow-width 4s forwards linear infinite,
+    flip-horizontal 4s steps(1, end) infinite;
+  left: 0;
+  top: 0;
+}
+
+.squareSpinner > .right {
+  animation:
+    grow-height 4s forwards linear 0.5s infinite,
+    flip-vertical 4s steps(1, end) infinite;
+  right: 0;
+  top: 0;
+}
+
+.squareSpinner > .bottom {
+  animation:
+    grow-width 4s forwards linear 1s infinite,
+    flip-horizontal 4s steps(1, end) infinite reverse;
+  bottom: 0;
+  right: 0;
+}
+
+.squareSpinner > .left {
+  animation:
+    grow-height 4s forwards linear 1.5s infinite,
+    flip-vertical 4s steps(1, end) infinite reverse;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes grow-width {
+  0% {width: 0;}
+  12.5% {width: 100%;}
+  25% {width: 100%;}
+  37.5% {width: 100%;}
+  50% {width: 100%;}
+  62.5% {width: 0;}
+  75% {width: 0;}
+  87.5% {width: 0;}
+  100% {width: 0;}
+}
+
+@keyframes grow-height {
+  0% {height: 0;}
+  12.5% {height: 100%;}
+  25% {height: 100%;}
+  37.5% {height: 100%;}
+  50% {height: 100%;}
+  62.5% {height: 0;}
+  75% {height: 0;}
+  87.5% {height: 0;}
+  100% {height: 0;}
+}
+
+@keyframes flip-horizontal {
+  0% {
+    left: 0;
+    right: initial;
+  }
+  50% {
+    left: initial;
+    right: 0;
+  }
+}
+
+@keyframes flip-vertical {
+  0% {
+    top: 0;
+    bottom: initial;
+  }
+  50% {
+    top: initial;
+    bottom: 0;
+  }
+}
