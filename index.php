@@ -6,9 +6,13 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo"></div>
-      <a href="#content" class="tab"></a>
-      <a href="#content2" class="tab"></a>
+      <a href="#" class="logo"></a>
+      <a href="#content" class="tab">
+        <div class="dropdown"></div>
+      </a>
+      <a href="#content2" class="tab">
+        <div class="dropdown"></div>
+      </a>
     </div>
     <div id="content" class="content">
     </div>

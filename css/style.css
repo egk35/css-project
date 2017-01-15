@@ -21,6 +21,21 @@ body {
 .header .tab {
   float: right;
   margin-left: 10px;
+  position: relative;
+}
+
+.header .tab .dropdown {
+  background-color: blue;
+  display: block;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transition: height .5s ease-in-out;
+}
+
+.header .tab:hover .dropdown {
+  height: 200px;
 }
 
 .header .logo {
