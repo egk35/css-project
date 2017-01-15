@@ -2,8 +2,19 @@
   <head>
     <title>Hello World!</title>
     <link href="css/icons.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div class="header">
+      <div class="logo"></div>
+      <a href="#content" class="tab"></a>
+      <a href="#content2" class="tab"></a>
+    </div>
+    <div id="content" class="content">
+    </div>
+    <div id="content2" class="content">
+    </div>
+    <!--
     <div class="iconGroup">
       <div>
         <div class="shrinkingSpinner"></div>
@@ -34,5 +45,6 @@
         </div>
       </div>
     </div>
+    -->
   </body>
 </html>

@@ -1,0 +1,46 @@
+body {
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.header {
+  background-color: red;
+  height: 70px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header .tab, .header .logo {
+  background-color: white;
+  height: 100%;
+  width: 125px;
+}
+
+.header .tab {
+  float: right;
+  margin-left: 10px;
+}
+
+.header .logo {
+  float: left;
+}
+
+.content {
+  background-color: red;
+  height: 200px;
+  left: -200px;
+  right: -200px;
+  position: absolute;
+  top: calc(20% + 90px);
+  width: 200px;
+  transition: left 1s ease-in;
+}
+
+#content:target,
+#content2:target {
+  left: calc(50% - 100px);
+  right: calc(50% - 100px);
+  transition: left 1s ease-out 1.5s;
+}
