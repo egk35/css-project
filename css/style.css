@@ -31,16 +31,13 @@ body {
   background-color: red;
   height: 200px;
   left: -200px;
-  right: -200px;
   position: absolute;
   top: calc(20% + 90px);
   width: 200px;
   transition: left 1s ease-in;
 }
 
-#content:target,
-#content2:target {
+.content:target {
   left: calc(50% - 100px);
-  right: calc(50% - 100px);
   transition: left 1s ease-out 1.5s;
 }
