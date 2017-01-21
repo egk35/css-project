@@ -1,4 +1,5 @@
 body {
+  background-color: gray;
   height: 100%;
   margin: 0;
   position: fixed;
@@ -43,8 +44,10 @@ body {
 }
 
 .content {
-  background-color: red;
+  background-color: white;
+  box-sizing: border-box;
   height: 200px;
+  padding: 10px;
   position: absolute;
   top: calc(20% + 90px);
   width: 200px;

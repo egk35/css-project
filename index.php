@@ -7,14 +7,15 @@
   <body>
     <div class="header">
       <a href="#home" class="logo"></a>
-      <a href="#content1" class="tab">
+      <a href="#shrinkingSpinner" class="tab">
         <div class="dropdown"></div>
       </a>
       <a href="#content2" class="tab">
         <div class="dropdown"></div>
       </a>
     </div>
-    <div id="content1" class="content">
+    <div id="shrinkingSpinner" class="content">
+      <div class="shrinkingSpinner"></div>
     </div>
     <div id="content2" class="content">
     </div>
