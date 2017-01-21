@@ -15,6 +15,97 @@
 
 /* Icons */
 
+/* Home Icon */
+
+.homeIcon {
+  height: 100%;
+  width: 100%;
+}
+
+.homeIcon > div {
+  float: left;
+  height: 100%;
+  position: relative;
+  width: calc(50% - 4px);
+}
+
+.homeIcon > div:first-child {
+  margin-right: 8px;
+}
+
+.homeIcon > div > div {
+  background-color: blue;
+  position: absolute;
+}
+
+.homeIcon .top, .homeIcon .bottom, .homeIcon .middle {
+  height: 6px;
+}
+
+.homeIcon .left, .homeIcon .right {
+  width: 6px;
+}
+
+.homeIcon .right {
+  right: 0;
+}
+
+.homeIcon .bottom {
+  bottom: 0;
+}
+
+.homeIcon .middle {
+  bottom: calc(50% - 3px);
+}
+
+.homeIcon .letterG .middle {
+  right: 0;
+}
+
+.homeIcon .letterG .right {
+  bottom: 0;
+}
+
+.homeIcon .top, .homeIcon .bottom {
+  animation: draw-full-width 4s ease-in-out infinite alternate;
+}
+
+.homeIcon .middle {
+  animation: draw-half-width 4s ease-in-out 2s infinite alternate;
+}
+
+.homeIcon .left {
+  animation: draw-full-height 4s ease-in-out 1s infinite alternate;
+}
+
+.homeIcon .right {
+  animation: draw-half-height 4s ease-in-out 1s infinite alternate;
+}
+
+@keyframes draw-full-width {
+  0% {width: 0;}
+  25% {width: 100%;}
+  100% {width: 100%;}
+}
+
+@keyframes draw-half-width {
+  0% {width: 0;}
+  25% {width: 50%;}
+  100% {width: 50%;}
+}
+
+@keyframes draw-full-height {
+  0% {height: 0;}
+  25% {height: 100%;}
+  100% {height: 100%;}
+}
+
+@keyframes draw-half-height {
+  0% {height: 0;}
+  25% {height: calc(50% + 3px);}
+  100% {height: calc(50% + 3px);}
+}
+
 /* Shrinking Spinner */
 
 .shrinkingSpinner {

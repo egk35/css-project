@@ -20,6 +20,21 @@
     <div id="content2" class="content">
     </div>
     <div id="home" class="content">
+      <div class="homeIcon">
+        <div class="letterE">
+          <div class="top"></div>
+          <div class="left"></div>
+          <div class="bottom"></div>
+          <div class="middle"></div>
+        </div>
+        <div class="letterG">
+          <div class="top"></div>
+          <div class="left"></div>
+          <div class="bottom"></div>
+          <div class="right"></div>
+          <div class="middle"></div>
+        </div>
+      </div>
     </div>
     <!--
     <div class="iconGroup">
