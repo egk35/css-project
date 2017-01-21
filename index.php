@@ -6,7 +6,23 @@
   </head>
   <body>
     <div class="header">
-      <a href="#home" class="logo"></a>
+      <a href="#home" class="logo">
+        <div class="homeIcon">
+          <div class="letterE">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="middle"></div>
+          </div>
+          <div class="letterG">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="right"></div>
+            <div class="middle"></div>
+          </div>
+        </div>
+      </a>
       <a href="#shrinkingSpinner" class="tab">
         <div class="dropdown"></div>
       </a>

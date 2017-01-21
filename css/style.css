@@ -16,13 +16,13 @@ body {
 .header .tab, .header .logo {
   background-color: white;
   height: 100%;
-  width: 125px;
 }
 
 .header .tab {
   float: right;
   margin-left: 10px;
   position: relative;
+  width: 125px;
 }
 
 .header .tab .dropdown {
@@ -40,7 +40,10 @@ body {
 }
 
 .header .logo {
+  box-sizing: border-box;
   float: left;
+  padding: 5px;
+  width: 70px;
 }
 
 .content {
