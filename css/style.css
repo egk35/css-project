@@ -45,14 +45,17 @@ body {
 .content {
   background-color: red;
   height: 200px;
-  left: -200px;
   position: absolute;
   top: calc(20% + 90px);
   width: 200px;
+}
+
+.content, .content:target ~ #home {
+  left: -200px;
   transition: left 1s ease-in;
 }
 
-.content:target {
+.content:target, #home {
   left: calc(50% - 100px);
   transition: left 1s ease-out 1.5s;
 }

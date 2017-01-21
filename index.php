@@ -6,17 +6,19 @@
   </head>
   <body>
     <div class="header">
-      <a href="#" class="logo"></a>
-      <a href="#content" class="tab">
+      <a href="#home" class="logo"></a>
+      <a href="#content1" class="tab">
         <div class="dropdown"></div>
       </a>
       <a href="#content2" class="tab">
         <div class="dropdown"></div>
       </a>
     </div>
-    <div id="content" class="content">
+    <div id="content1" class="content">
     </div>
     <div id="content2" class="content">
+    </div>
+    <div id="home" class="content">
     </div>
     <!--
     <div class="iconGroup">
