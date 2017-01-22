@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Hello World!</title>
+    <title>EG</title>
     <link href="css/icons.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>

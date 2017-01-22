@@ -46,24 +46,16 @@
   width: 16.7%;
 }
 
-.homeIcon .right {
+.homeIcon .right, .homeIcon .letterG .middle {
   right: 0;
 }
 
-.homeIcon .bottom {
+.homeIcon .bottom, .homeIcon .letterG .right {
   bottom: 0;
 }
 
 .homeIcon .middle {
   bottom: 46%;
-}
-
-.homeIcon .letterG .middle {
-  right: 0;
-}
-
-.homeIcon .letterG .right {
-  bottom: 0;
 }
 
 .homeIcon .top, .homeIcon .bottom {
