@@ -26,11 +26,11 @@
   float: left;
   height: 100%;
   position: relative;
-  width: calc(50% - 4px);
+  width: 48%;
 }
 
 .homeIcon > div:first-child {
-  margin-right: 8px;
+  margin-right: 4%;
 }
 
 .homeIcon > div > div {
@@ -39,11 +39,11 @@
 }
 
 .homeIcon .top, .homeIcon .bottom, .homeIcon .middle {
-  height: 6px;
+  height: 8%;
 }
 
 .homeIcon .left, .homeIcon .right {
-  width: 6px;
+  width: 16.7%;
 }
 
 .homeIcon .right {
@@ -55,7 +55,7 @@
 }
 
 .homeIcon .middle {
-  bottom: calc(50% - 3px);
+  bottom: 46%;
 }
 
 .homeIcon .letterG .middle {
@@ -102,8 +102,8 @@
 
 @keyframes draw-half-height {
   0% {height: 0;}
-  25% {height: calc(50% + 3px);}
-  100% {height: calc(50% + 3px);}
+  25% {height: 54%;}
+  100% {height: 54%;}
 }
 
 /* Shrinking Spinner */
